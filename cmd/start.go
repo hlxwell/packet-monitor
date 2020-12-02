@@ -59,7 +59,7 @@ func init() {
 	// cmd.PersistentFlags().Lookup("foo").Value
 	// startCmd.PersistentFlags().String("foo", "", "A help for foo")
 
-	startCmd.Flags().StringVarP(&host, "host", "o", "http://JPDWA00727", "Server host")
+	startCmd.Flags().StringVarP(&host, "host", "o", "http://127.0.0.1", "Server host")
 	startCmd.Flags().DurationVarP(&configUpdateFrequency, "configUpdateFrequency", "u", 30*time.Second, "Frequency for loading config from server. unit is second.")
 	startCmd.Flags().DurationVarP(&packetSendingFrequency, "packetSendingFrequency", "s", 10*time.Second, "Frequency for sending packet to server. unit is second.")
 }
