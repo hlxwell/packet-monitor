@@ -1,5 +1,19 @@
 # L4 PACKET MONITORING
 
+```
+Monitoring port connectivity by sending packet.
+
+Usage:
+  packet-mon [command]
+
+Available Commands:
+  help        Help about any command
+  start       Start Packet Mon Service
+
+Flags:
+      --config string   config file (default is $HOME/.xxx.yaml)
+```
+
 ## TCP Packet Sender
 
 ### TCP Port Checking
