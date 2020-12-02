@@ -1,0 +1,13 @@
+[Unit]
+Description=Packet Mon
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/packet-mon
+ExecStop=/bin/kill -s QUIT $MAINPID
+Restart=on-failure
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target

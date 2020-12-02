@@ -1,0 +1,4 @@
+/vendor
+/bin
+/configs/policy.yml
+/.vscode
